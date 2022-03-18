@@ -12,7 +12,7 @@ const numeriDigitati = [];
 const numeriIndovinati = [];
 const numeriSbagliati = [];
 const punteggio = document.querySelector('.score');
-let countdown = 5;
+let countdown = 30;
 
 //numero random
 function numeroRandomRange(min, max){
@@ -35,7 +35,6 @@ for(let i=0; i < numbers; i++){
     let number = numeroUnico(1, 100, numbersToGuess)
     numbersToGuess.push(number)
 }
-console.log(numbersToGuess);
 
 let showNumber = showNumberToGuess();
 
@@ -74,7 +73,7 @@ function inputNumber(){
     punteggio.innerHTML = `Hai indovinato ${numeriIndovinati.length} numeri. I numeri indovinati sono ${numeriIndovinati}.` 
 }
 
-setTimeout(inputNumber, 6000);
+setTimeout(inputNumber, 31000);
 
 
 
