@@ -9,7 +9,6 @@ const num = document.querySelector('.numbers');
 const timer = document.querySelector('.timer');
 const myTimerInterval = setInterval(myCountdown, 1000);
 const numeriDigitati = [];
-const inputContainer = document.querySelector('.input-container');
 let countdown = 5;
 
 //numero random
@@ -44,7 +43,6 @@ function showNumberToGuess(){
     }
 }
 
-
 function myCountdown (){
     countdown--;
     timer.innerHTML = 'Timer: ' + countdown;
@@ -55,11 +53,7 @@ function myCountdown (){
     }
 }
 
-// for(let i=0; i < numbers; i++){
-//     let numeroDigitato = parseInt(prompt('Digita un numero alla volta di quelli che hai memorizzato'))
-//     numeriDigitati.push(numeroDigitato);
-// }
-// console.log(numeriDigitati)
+
 
 
 
