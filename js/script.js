@@ -11,6 +11,7 @@ const myTimerInterval = setInterval(myCountdown, 1000);
 const numeriDigitati = [];
 const numeriIndovinati = [];
 const numeriSbagliati = [];
+const punteggio = document.querySelector('.score');
 let countdown = 5;
 
 //numero random
@@ -59,21 +60,24 @@ function inputNumber(){
         let number = parseInt(prompt('Digita un numero alla volta di quelli che hai memorizzato'))
         numeriDigitati.push(number)
     }
+    for(let i=0; i < numbersToGuess.length; i++){
+        if(numbersToGuess.includes(numeriDigitati[i])){
+            numeriIndovinati.push(numeriDigitati[i])
+        }else{
+            numeriSbagliati.push(numeriDigitati[i])
+        }
+        
+    }
+    console.log('Hai indovinato' + numeriIndovinati);
+    console.log('Non hai indovinato' + numeriSbagliati);
+
+    punteggio.innerHTML = `Hai indovinato ${numeriIndovinati.length} numeri. I numeri indovinati sono ${numeriIndovinati}.` 
 }
 
 setTimeout(inputNumber, 6000);
 
-console.log(numeriDigitati);
 
-for(let i=0; i < numbersToGuess.length; i++){
-    if(numbersToGuess[i] == numeriDigitati[i]){
-        numeriIndovinati.push(numeriDigitati[i])
-    }else{
-        numeriSbagliati.push(numeriDigitati[i])
-    }
-    console.log(numeriIndovinati);
-    console.log(numeriSbagliati);
-}
+
 
 
 

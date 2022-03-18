@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 .container {
   max-width: 1200px;
   margin: 50px;
@@ -16,6 +20,7 @@
   font-size: 30px;
 }
 
-.d-none {
-  display: none;
+.score {
+  font-size: 40px;
+  color: green;
 }
