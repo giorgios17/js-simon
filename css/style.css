@@ -6,11 +6,11 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  background-color: rgb(35, 197, 197);
 }
 
 .container {
   max-width: 1200px;
-  margin: 50px;
 }
 
 .numbers {
@@ -18,9 +18,11 @@ body {
 }
 .timer {
   font-size: 30px;
+  font-weight: bold;
 }
 
 .score {
   font-size: 40px;
   color: green;
+  font-weight: bold;
 }
