@@ -9,6 +9,8 @@ const num = document.querySelector('.numbers');
 const timer = document.querySelector('.timer');
 const myTimerInterval = setInterval(myCountdown, 1000);
 const numeriDigitati = [];
+const numeriIndovinati = [];
+const numeriSbagliati = [];
 let countdown = 5;
 
 //numero random
@@ -62,6 +64,17 @@ function inputNumber(){
 setTimeout(inputNumber, 6000);
 
 console.log(numeriDigitati);
+
+for(let i=0; i < numbersToGuess.length; i++){
+    if(numbersToGuess[i] == numeriDigitati[i]){
+        numeriIndovinati.push(numeriDigitati[i])
+    }else{
+        numeriSbagliati.push(numeriDigitati[i])
+    }
+    console.log(numeriIndovinati);
+    console.log(numeriSbagliati);
+}
+
 
 
 
