@@ -48,10 +48,21 @@ function myCountdown (){
     timer.innerHTML = 'Timer: ' + countdown;
     if(countdown <= 0){
         num.innerHTML= '';
-        inputContainer.classList.remove('d-none');
         clearInterval(myTimerInterval);
     }
 }
+
+function inputNumber(){
+    for(let i=0; i < numbers; i++){
+        let number = parseInt(prompt('Digita un numero alla volta di quelli che hai memorizzato'))
+        numeriDigitati.push(number)
+    }
+}
+
+setTimeout(inputNumber, 6000);
+
+console.log(numeriDigitati);
+
 
 
 
