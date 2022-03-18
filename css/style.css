@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 50px;
+}
+
+.numbers {
+  font-size: 50px;
+}
+.timer {
+  font-size: 30px;
+}
+
+.d-none {
+  display: none;
+}
