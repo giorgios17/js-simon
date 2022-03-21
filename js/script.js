@@ -60,7 +60,7 @@ function inputNumber(){
         numeriDigitati.push(number)
     }
     for(let i=0; i < numbersToGuess.length; i++){
-        if(numbersToGuess.includes(numeriDigitati[i])){
+        if(numbersToGuess.includes(numeriDigitati[i]) && !numeriIndovinati.includes(numeriDigitati[i])){
             numeriIndovinati.push(numeriDigitati[i])
         }else{
             numeriSbagliati.push(numeriDigitati[i])
